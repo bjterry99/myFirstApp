@@ -5,20 +5,24 @@
     ViewData["Title"] = "Calculator";
 }
 
+@model CalcModel;
+
 <h3>Grade calculator:</h3>
 <p>Enter values between 0 and 100</p>
-<form>
+<form method="post">
     <label>Assignments:</label>
-    <input id="assign" type="number" min="0" max="100"/><br />
+    <input id="assign" asp-for="Assignments" type="number" min="0" max="100"/><br />
     <label>Group project:</label>
-    <input id="group" type="number" min="0" max="100"/><br />
+    <input id="group" asp-for="Group_project" type="number" min="0" max="100"/><br />
     <label>Quizzes:</label>
-    <input id="quiz" type="number" min="0" max="100"/><br />
+    <input id="quiz" asp-for="Quizzes" type="number" min="0" max="100"/><br />
     <label>Exams:</label>
-    <input id="exam" type="number" min="0" max="100"/><br />
+    <input id="exam" asp-for="Exams" type="number" min="0" max="100"/><br />
     <label>INTEX:</label>
-    <input id="intex" type="number" min="0" max="100"/><br />
-    <input id="btnSend" type="button" value="Calculate grade" />
+    <input id="intex" asp-for="Intex" type="number" min="0" max="100"/><br />
+    <input id="btnSend" type="submit" value="Calculate grade" />
+
+    <div asp-validation-summary="All"></div>
 </form>
 
 <script src="~/js/js.js"></script>

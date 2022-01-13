@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using myFirstApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,16 @@ namespace myFirstApp.Controllers
             return View();
         }
 
+        [HttpGet]
+
         public IActionResult Calc ()
+        {
+            return View();
+        }
+
+        [HttpPost]
+
+        public IActionResult Calc (CalcModel model)
         {
             return View();
         }

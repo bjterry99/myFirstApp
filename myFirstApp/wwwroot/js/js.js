@@ -3,21 +3,21 @@
     var grade = 0
     var letter
 
-    //check for values between 0 and 100
-    if (($("#assign").val() > 100) || ($("#assign").val() < 0)) {
-        alert("Please enter values between 0 and 100.")
+    //check for values between 0 and 1
+    if (($("#assign").val() > 100) || ($("#assign").val() < 0) || ($("#assign").val() == '')) {
+        
     }
-    else if (($("#group").val() > 100) || ($("#group").val() < 0)) {
-        alert("Please enter values between 0 and 100.")
+    else if (($("#group").val() > 100) || ($("#group").val() < 0) || ($("#assign").val() == '')) {
+        
     }
-    else if (($("#quiz").val() > 100) || ($("#quiz").val() < 0)) {
-        alert("Please enter values between 0 and 100.")
+    else if (($("#quiz").val() > 100) || ($("#quiz").val() < 0) || ($("#assign").val() == '')) {
+        
     }
-    else if (($("#exam").val() > 100) || ($("#exam").val() < 0)) {
-        alert("Please enter values between 0 and 100.")
+    else if (($("#exam").val() > 100) || ($("#exam").val() < 0) || ($("#assign").val() == '')) {
+        
     }
-    else if (($("#intex").val() > 100) || ($("#intex").val() < 0)) {
-        alert("Please enter values between 0 and 100.")
+    else if (($("#intex").val() > 100) || ($("#intex").val() < 0) || ($("#assign").val() == '')) {
+        
     }
     else {
         //calculate grade
