@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<h3>Grade calculator:</h3>
+<p>Enter values between 0 and 100</p>
+<form>
+    <label>Assignments:</label>
+    <input id="assign" type="number" min="0" max="100"/><br />
+    <label>Group project:</label>
+    <input id="group" type="number" min="0" max="100"/><br />
+    <label>Quizzes:</label>
+    <input id="quiz" type="number" min="0" max="100"/><br />
+    <label>Exams:</label>
+    <input id="exam" type="number" min="0" max="100"/><br />
+    <label>INTEX:</label>
+    <input id="intex" type="number" min="0" max="100"/><br />
+    <input id="btnSend" type="button" value="Calculate grade" />
+</form>
+
+<script src="~/js/js.js"></script>

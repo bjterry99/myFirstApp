@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="~/img/EFFECTS.jpg">
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Sub" asp-action="Index">Home</a>
+        <a asp-controller="Sub" asp-action="Calc">Calculator</a>
+    </nav>
+
+    <div>
+        <h1>This is the main header!</h1>
+    </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+</body>
+</html>
