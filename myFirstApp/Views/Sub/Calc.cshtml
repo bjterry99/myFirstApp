@@ -9,20 +9,22 @@
 
 <h3>Grade calculator:</h3>
 <p>Enter values between 0 and 100</p>
-<form method="post">
-    <label>Assignments:</label>
-    <input id="assign" asp-for="Assignments" type="number" min="0" max="100"/><br />
-    <label>Group project:</label>
-    <input id="group" asp-for="Group_project" type="number" min="0" max="100"/><br />
-    <label>Quizzes:</label>
-    <input id="quiz" asp-for="Quizzes" type="number" min="0" max="100"/><br />
-    <label>Exams:</label>
-    <input id="exam" asp-for="Exams" type="number" min="0" max="100"/><br />
-    <label>INTEX:</label>
-    <input id="intex" asp-for="Intex" type="number" min="0" max="100"/><br />
-    <input id="btnSend" type="submit" value="Calculate grade" />
+<form method="post" class="form-horizontal">
+    <div class="form-group">
+        <label>Assignments:</label>
+        <input id="assign" asp-for="Assignments" type="number" min="0" max="100" /><br />
+        <label>Group project:</label>
+        <input id="group" asp-for="Group_project" type="number" min="0" max="100" /><br />
+        <label>Quizzes:</label>
+        <input id="quiz" asp-for="Quizzes" type="number" min="0" max="100" /><br />
+        <label>Exams:</label>
+        <input id="exam" asp-for="Exams" type="number" min="0" max="100" /><br />
+        <label>INTEX:</label>
+        <input id="intex" asp-for="Intex" type="number" min="0" max="100" /><br />
+        <input id="btnSend" type="submit" class="btn btn-primary" value="Calculate grade" />
 
-    <div asp-validation-summary="All"></div>
+        <div asp-validation-summary="All"></div>
+    </div>
 </form>
 
 <script src="~/js/js.js"></script>
